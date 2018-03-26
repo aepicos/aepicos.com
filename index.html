@@ -136,5 +136,19 @@
       <footer class="content">
         <small>This site is under constant construction. Follow progress here and on <a href="https://github.com/aepicos/aepicos.com" rel="external">Github</a>.</small>
       </footer>
+
+      <script>
+        if (document.querySelectorAll) {
+          var externalLinks = document.querySelectorAll('a[rel="external"]');
+
+          for (var i = 0, len = externalLinks.length; i < len; i++) {
+            externalLinks[i].addEventListener('click', function(event) {
+              event.preventDefault();
+              event.stopPropagation();
+              window.open(this.href, '_blank');
+            }, false);
+          }
+        }
+      </script>
     </body>
 </html>
