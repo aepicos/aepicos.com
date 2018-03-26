@@ -1,0 +1,23 @@
+.hero-banner {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vmin;
+  padding: 4em 1em;
+  background:{
+    attachment: fixed;
+    color: #800080; // purple // TODO make var
+    image: url(../img/hero.jpg);
+    position: center top;
+    repeat: no-repeat;
+    size: auto 80vh;
+  }
+  color: white;
+  text-align: center;
+
+  // modifiers
+  h1 {
+    font-size: 6vmax;
+  }
+}

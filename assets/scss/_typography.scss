@@ -1,0 +1,16 @@
+body {
+  font: {
+    family: $_body_font_family;
+    size: $_base_font_size;
+    weight: bold;
+  }
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  font: {
+    family: $_header_font_family;
+    weight: normal;
+  }
+  line-height: 1.3;
+}

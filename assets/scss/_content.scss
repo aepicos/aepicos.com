@@ -1,0 +1,9 @@
+.content {
+  display: block;
+  max-width: $_max_content_width;
+  margin: {
+    right: auto;
+    left: auto;
+  }
+  padding: m(2);
+}
