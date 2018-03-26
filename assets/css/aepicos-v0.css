@@ -1,3 +1,9 @@
+@keyframes emphasis {
+  0%,
+  100% {
+    transform: scale(1); }
+  25% {
+    transform: scale(1.06); } }
 *,
 *::before,
 *::after {
@@ -43,7 +49,7 @@ h1, h2, h3, h4 {
 
 .content {
   display: block;
-  max-width: 73.125rem;
+  max-width: 56.25rem;
   margin-right: auto;
   margin-left: auto;
   padding: 1.125rem; }
@@ -65,5 +71,52 @@ h1, h2, h3, h4 {
   text-align: center; }
   .hero-banner h1 {
     font-size: 6vmax; }
+
+.portfolio-items {
+  margin: -0.5625rem; }
+  @media (min-width: 500px) {
+    .portfolio-items {
+      display: flex;
+      flex-flow: row wrap; }
+      .portfolio-items > * {
+        flex: 1;
+        min-width: 11.25rem;
+        max-width: 16.875rem; } }
+  .portfolio-items--title {
+    margin-top: 4.5rem;
+    margin-bottom: 1.125rem; }
+
+.portfolio-item {
+  display: block;
+  margin: 0.5625rem;
+  color: black;
+  border: 1px solid silver;
+  border-radius: 2px;
+  background-color: white;
+  text-decoration: none;
+  transition: box-shadow 300ms ease; }
+  .portfolio-item:hover {
+    animation: emphasis 800ms ease;
+    box-shadow: 0 0.5625rem 2.25rem rgba(0, 0, 0, 0.2);
+    transition: box-shadow 800ms ease; }
+  .portfolio-item--caption {
+    display: block;
+    padding: 0.5625rem 0.5625rem 1.6875rem;
+    background-color: white; }
+    .portfolio-item--caption::after {
+      content: '';
+      display: block;
+      margin-top: 0.28125rem;
+      width: 2.25rem;
+      height: 4px;
+      background-color: orange;
+      border-radius: 2px; }
+  .portfolio-item--title {
+    font-size: 1.125rem; }
+  .portfolio-item--sub-title {
+    font-family: Quicksand, sans-serif;
+    font-size: 0.84375rem;
+    font-weight: bold;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=aepicos-v0.css.map */
